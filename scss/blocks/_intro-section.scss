@@ -1,0 +1,42 @@
+.intro .container {
+    width: 1280px;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-image: url(../imges/Bitmap.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-size: 1280px 600px;
+  }
+  .intro-info {
+    width: 493px;
+    padding: 60px 0px;
+    margin-left: 85px;
+  }
+  .intro-heading {
+    margin-bottom: 32px;
+    font-weight: 900;
+    font-family: "Fraunces";
+    font-size: 72px;
+    line-height: 72px;
+    color: #fefcf7;
+  }
+  .intro-paragraf {
+    width: 435px;
+    margin-bottom: 56px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #fefcf7;
+    opacity: 0.8;
+  }
+  .intro-link {
+    padding: 15px 32px;
+    font-weight: 900;
+    font-size: 18px;
+    font-family: "Fraunces";
+    line-height: 25px;
+    text-decoration: none;
+    color: #fefcf7;
+    background: #0e8784;
+    border-radius: 6px;
+  }

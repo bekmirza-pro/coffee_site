@@ -1,0 +1,31 @@
+/* ******************OUR COLLECTION************************************* */
+.collection .container {
+    width: 1130px;
+    margin: 0 auto;
+  }
+.our-collection {
+    padding: 167px 0px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+    background-image: url(../imges/our-collection1.png);
+    background-repeat: no-repeat;
+    background-position: center top 35px;
+  }
+  .collection-heading {
+    margin-top: 71px;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: "Fraunces";
+    line-height: 32px;
+    color: #333d4b;
+  }
+  .collection-paragraf {
+    width: 255px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333d4b;
+  }

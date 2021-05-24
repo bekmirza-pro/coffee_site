@@ -1,0 +1,28 @@
+.our-commitment .container {
+  width: 1110px;
+  height: 520px;
+  margin-bottom: 244px;
+}
+.our-commitment-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.our-commitment-info::before {
+  content: url(/imges/Bitmap.jpg);
+}
+.our-heading {
+  font-weight: 900;
+  font-size: 40px;
+  font-family: "Fraunces";
+  line-height: 48px;
+  color: #333d4b;
+}
+.our-paragraf {
+    width: 540px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}

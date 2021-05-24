@@ -1,0 +1,50 @@
+.headquarters-section .container {
+  width: 1045px;
+  height: 366px;
+  margin-bottom: 168px;
+}
+.headquarters-heading {
+  font-family: "Fraunces";
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 190px;
+  line-height: 32px;
+  color: #83888f;
+}
+.headquarters-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.list-item {
+  margin-right: 125px;
+}
+.list-item:nth-child(1)::before{
+    position: absolute;
+    transform: translateY(-160%);
+    content: url(/imges/Combi.png);
+}
+.list-item:nth-child(2)::before{
+    position: absolute;
+    transform: translateY(-160%);
+    content: url(/imges/Com.png);
+}
+.list-item:nth-child(3)::before{
+    position: absolute;
+    transform: translateY(-160%);
+    content: url(/imges/1.png);
+}
+.list-item-heading {
+  font-weight: 900;
+  font-size: 32px;
+  font-family: "Fraunces";
+  line-height: 36px;
+  color: #333d4b;
+}
+.list-item-paragraf {
+  font-size: 16px;
+  line-height: 26px;
+  color: #333d4b;
+}

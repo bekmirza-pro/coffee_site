@@ -1,0 +1,34 @@
+.quality-section .container {
+  width: 1280px;
+  height: 462px;
+  margin-bottom: 168px;
+  background: #2c343e;
+  border-radius: 10px;
+}
+.quality-item {
+  width: 685px;
+  padding: 100px 85px;
+  color: #fefcf7;
+}
+.quality-item::before{
+    position: absolute;
+    transform: translateX(150%) translateY(-40%);
+    content: url(/imges/Bitmap1.jpg);
+}
+.quality-heading {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+.quality-paragraf {
+  width: 540px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
