@@ -1,37 +1,43 @@
-.health-section .container {
+.create-section .container {
   width: 1280px;
   height: 450px;
   padding: 0 20px;
   margin-bottom: 168px;
-  background-image: url(/imges/Bit.jpg);
+  background-image: url(/imges/Bitmap3.png);
   background-size: 1280px 450px;
   background-repeat: no-repeat;
 }
+
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-    .health-section .container {
-    background-image: url(/imges/about@2x.png);
-  }
-
   
+    .create-section .container{
+     background-image:url(/imges/last@2x.svg);
+    }
 }
-.health-info {
-  width: 590px;
-  padding: 120px 85px;
+.create-health-info {
+  width: 636px;
+  height: 182px;
+  padding: 134px 75px;
 }
-.health-heading {
-  font-weight: 900;
-  font-size: 40px;
+.create-health-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
   font-family: "Fraunces";
-  line-height: 48px;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
   color: #fefcf7;
 }
-.health-paragraf {
+.create-health-paragraf {
   font-size: 16px;
   line-height: 26px;
+  font-family: "Barlow";
   color: #fefcf7;
+  mix-blend-mode: normal;
+  opacity: 0.8;
 }

@@ -44,6 +44,71 @@
   background: #0e8784;
   border-radius: 8px;
 }
+.section-box {
+  margin-top: 130px;
+}
+.services-section-item:nth-child(1)::before {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  content: url(/imges/Shape.png);
+  background-size: 72px 72px;
+  top: 72px;
+  right: 143px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .services-section-item:nth-child(1)::before {
+    width: 72px;
+    content: url(/imges/Shape@2x.svg);
+  }
+}
+.services-section-item:nth-child(2)::before {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  content: url(/imges/Combined1Shape.svg);
+  top: 72px;
+  background-size: 72px 72px;
+  right: 143px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .services-section-item:nth-child(2)::before {
+    width: 72px;
+    content: url(/imges/CombinedShape@2x.svg);
+  }
+}
+.services-section-item:nth-child(3)::before {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  content: url(/imges/Combined2Shape.svg);
+  top: 72px;
+  background-size: 72px 72px;
+  right: 143px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .services-section-item:nth-child(3)::before {
+    width: 72px;
+    content: url(/imges/ComShape@2x.svg);
+  }
+}
+
 .services-section-item:nth-child(2) {
   margin-left: 30px;
   margin-right: 30px;
@@ -56,6 +121,9 @@
   line-height: 32px;
   text-align: center;
   color: #fefcf7;
+}
+.services-section-item:nth-child(3) .services-heading {
+  margin-top: 75px;
 }
 .services-paragraf {
   width: 255px;
@@ -87,7 +155,7 @@
 .section-last::before {
   position: absolute;
   content: "";
-  width: 750px;
+  width: 760px;
   height: 0.5px;
   margin-top: 12px;
   transform: translateY(-25px);
@@ -140,5 +208,13 @@
   text-decoration: none;
   color: #fefcf7;
   background: #0e8784;
+  border-radius: 6px;
+}
+.last-section-link:hover {
+  background: #66d2cf;
+  border-radius: 6px;
+}
+.last-section-link:active {
+  background: #e2dedb;
   border-radius: 6px;
 }

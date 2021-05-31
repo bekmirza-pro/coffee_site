@@ -36,6 +36,24 @@
     transform: translateY(-160%);
     content: url(/imges/1.png);
 }
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .list-item:nth-child(1)::before{
+    content: url(/imges/CombinedShape2@2x.svg);
+  }
+  .list-item:nth-child(2)::before{
+    content: url(/imges/CombinedShape3@2x.svg);
+  }
+  .list-item:nth-child(3)::before{
+    content: url(/imges/CombinedShape4@2x.svg);
+  }
+}
 .list-item-heading {
   font-weight: 900;
   font-size: 32px;

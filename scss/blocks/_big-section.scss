@@ -1,0 +1,137 @@
+.big-section .container {
+  width: 1100px;
+  padding: 100px 0px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.big-section-paragraf {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+.big-section-heading {
+  display: inline-block;
+  margin-left: 10px;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Fraunces";
+  line-height: 32px;
+  color: #83888f;
+}
+hr {
+  width: 255px;
+  margin-left: 0px;
+}
+.big-section-list {
+  list-style: none;
+}
+.big-section-link {
+  text-decoration: none;
+}
+.form-heading {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 40px;
+  font-family: "Fraunces";
+  line-height: 48px;
+  color: #83888f;
+}
+.form-heading::after {
+  content: url(/imges/Path2.png);
+}
+.label_radio {
+  display: block;
+  width: 230px;
+  height: 250px;
+}
+.label_radio:nth-child(2) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.input_controller {
+  display: block;
+  padding: 32px 28px 84px 28px;
+  background-color: #f4f1eb;
+  border-radius: 8px;
+}
+.input_controller:hover {
+  background-color: #fdd6ba;
+  border-radius: 8px;
+}
+.input-heading {
+  display: block;
+  margin-bottom: 24px;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: "Fraunces";
+  line-height: 32px;
+  color: #333d4b;
+}
+.input-text {
+  font-size: 16px;
+  font-family: "Barlow";
+  line-height: 26px;
+  color: #333d4b;
+}
+.input_radio:checked + .input_controller,
+.input_radio:checked + .input_controller .input-heading,
+.input_radio:checked + .input_controller .input-text {
+  background-color: #0e8784;
+  color: #fefcf7;
+}
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 88px;
+  margin-top: 60px;
+}
+.order-summary {
+  background-color: #2c343e;
+}
+.order-box {
+  padding: 31px 64px;
+}
+.order-heading {
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.order-paragraf {
+  width: 600px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  font-size: 24px;
+  line-height: 40px;
+  color: #ffffff;
+}
+.order-paragraf span {
+  color: #0e8784;
+}
+.form-button {
+  display: block;
+  margin-left: auto;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  padding: 15px 36px;
+  background-color: #0e8784;
+  color: #fefcf7;
+  border: 1px solid white;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "Fraunces";
+  border-radius: 6px;
+}
+.form-button:hover {
+  background: #66d2cf;
+  border-radius: 6px;
+}
+.form-button:active {
+  background: #e2dedb;
+  border-radius: 6px;
+}

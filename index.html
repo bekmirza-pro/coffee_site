@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-
-    
     <header class="site-header">
       <div class="container">
         <div class="header-item">
@@ -17,6 +15,7 @@
             <a href="#">
               <img
                 src="./imges/site-logo.svg"
+                srcset="./imges/site-logo.svg 1x, ./imges/Group5@2x.png 2x"
                 alt="site-logo"
                 width="204"
                 height="24"
@@ -25,8 +24,14 @@
           <nav>
             <ul class="header-left">
               <li><a class="header-left-item" href="./index.html">HOME</a></li>
-              <li><a class="header-left-item" href="./about.html">ABOUT US</a></li>
-              <li><a class="header-left-item" href="#">CREATE YOUR PLAN</a></li>
+              <li>
+                <a class="header-left-item" href="./about.html">ABOUT US</a>
+              </li>
+              <li>
+                <a class="header-left-item" href="./create_your_plan.html"
+                  >CREATE YOUR PLAN</a
+                >
+              </li>
             </ul>
           </nav>
         </div>
@@ -53,6 +58,7 @@
               <img
                 class="our-fhotos"
                 src="./imges/copy.png"
+                srcset="./imges/copy.png 1x, ./imges/kopi1copy.png 2x"
                 alt="Gran Espresso"
                 width="256"
                 height="193"
@@ -67,6 +73,7 @@
               <img
                 class="our-fhotos"
                 src="./imges/kopi2.png"
+                srcset="./imges/kopi2.png 1x, ./imges/kopi21.png 2x"
                 alt="Planalto"
                 width="256"
                 height="193"
@@ -81,6 +88,7 @@
               <img
                 class="our-fhotos"
                 src="./imges/kopi3.png"
+                srcset="./imges/kopi3.png 1x, ./imges/kopi3@2x.png 2x"
                 alt="Piccollo"
                 width="256"
                 height="193"
@@ -95,6 +103,7 @@
               <img
                 class="our-fhotos"
                 src="./imges/kopi4.png"
+                srcset="./imges/kopi4.png 1x, ./imges/kopi4@2x.png 2x"
                 alt="Danche"
                 width="256"
                 height="193"
@@ -121,38 +130,32 @@
         <div class="container">
           <ul class="services-section">
             <li class="services-section-item">
-              <img class="services-fhoto" src="./imges/Shape.png" alt="car" />
-              <h3 class="services-heading">Free shipping</h3>
-              <p class="services-paragraf">
-                We cover the cost and coffee is delivered fast. Peak freshness:
-                guaranteed.
-              </p>
+              <div class="section-box">
+                <h3 class="services-heading">Free shipping</h3>
+                <p class="services-paragraf">
+                  We cover the cost and coffee is delivered fast. Peak
+                  freshness: guaranteed.
+                </p>
+              </div>
+            </li>
+
+            <li class="services-section-item">
+              <div class="section-box">
+                <h3 class="services-heading">Exclusive benefits</h3>
+                <p class="services-paragraf">
+                  Special offers and swag when you subscribe, including 30% off
+                  your first shipment.
+                </p>
+              </div>
             </li>
             <li class="services-section-item">
-              <img
-                class="services-fhoto"
-                src="./imges/Shape-2.png"
-                alt="priz"
-              />
-              <h3 class="services-heading">Exclusive benefits</h3>
-              <p class="services-paragraf">
-                Special offers and swag when you subscribe, including 30% off
-                your first shipment.
-              </p>
-            </li>
-            <li class="services-section-item">
-              <img
-                class="services-fhoto"
-                src="./imges/Combined.png"
-                alt="coffee"
-                width="72"
-                height="72"
-              />
-              <h3 class="services-heading">Best quality</h3>
-              <p class="services-paragraf">
-                Discover an endless variety of the world’s best artisan coffee
-                from each of our roasters.
-              </p>
+              <div class="section-box">
+                <h3 class="services-heading">Best quality</h3>
+                <p class="services-paragraf">
+                  Discover an endless variety of the world’s best artisan coffee
+                  from each of our roasters.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -167,7 +170,7 @@
                 Pick your <br />
                 coffee
               </h2>
-              <p class="section-last-namberlast-paragraf">
+              <p class="small-last-paragraf">
                 Select from our evolving range of artisan coffees. Our beans are
                 ethically sourced and we pay fair prices for them. There are new
                 coffees in all profiles every month for you to try out.
@@ -203,14 +206,21 @@
             <a href="#"
               ><img
                 src="./imges/footer-logo.png"
+                srcset="./imges/footer-logo.png 1x,./imges/Group5.png 2x"
                 alt="site-logo"
                 width="202"
                 height="24"
             /></a>
             <ul class="footer-list">
-              <li><a class="footer-list-item" href="#">HOME</a></li>
-              <li><a class="footer-list-item" href="#">ABOUT US</a></li>
-              <li><a class="footer-list-item" href="#">CREATE YOUR PLAN</a></li>
+              <li><a class="footer-list-item" href="./index.html">HOME</a></li>
+              <li>
+                <a class="footer-list-item" href="./about.html">ABOUT US</a>
+              </li>
+              <li>
+                <a class="footer-list-item" href="./create_your_plan.html"
+                  >CREATE YOUR PLAN</a
+                >
+              </li>
             </ul>
           </div>
           <div class="footer-left">
@@ -218,18 +228,21 @@
               <img
                 class="footer-left-fhoto"
                 src="./imges/facebook.png"
+                srcset="./imges/facebook.png 1x, ./imges/Path@2x.png 2x"
                 alt="facebook"
             /></a>
             <a href="#">
               <img
                 class="footer-left-fhoto"
                 src="./imges/twitter.png"
+                srcset="./imges/twitter.png 1x, ./imges/twitter@2x.png 2x"
                 alt="twitter"
             /></a>
             <a href="#">
               <img
                 class="footer-left-fhoto"
                 src="./imges/instagram.png"
+                srcset="./imges/instagram.png 1x, ./imges/instagram@2x.png 2x"
                 alt="instagram"
             /></a>
           </div>

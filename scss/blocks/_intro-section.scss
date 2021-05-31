@@ -8,6 +8,19 @@
     border-radius: 10px;
     background-size: 1280px 600px;
   }
+  @media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+  .intro .container{
+    background-image: url(/imges/Bitmap@2x.png);
+  }
+
+}
   .intro-info {
     width: 493px;
     padding: 60px 0px;
@@ -38,5 +51,13 @@
     text-decoration: none;
     color: #fefcf7;
     background: #0e8784;
+    border-radius: 6px;
+  }
+  .intro-link:hover {
+    background: #66d2cf;
+    border-radius: 6px;
+  }
+  .intro-link:active {
+    background: #e2dedb;
     border-radius: 6px;
   }
