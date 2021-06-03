@@ -1,23 +1,87 @@
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+.header-right-item {
+  display: inline-block;
+  z-index: 29;
+}
+.header-left {
+  display: flex;
+  list-style: none;
+}
 
+.header-left-item {
+  margin-left: 33px;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #83888f;
+}
+.humburger_btn {
+  z-index: 21;
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 770px) {
   .container {
-    width: 1320px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
+    max-width: 690px;
   }
-  .header-item {
+}
+@media only screen and (max-width: 375px) {
+  .site-nav {
+    display: none;
+  }
+  .header--adaptive .site-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 20;
+    background-image: linear-gradient(
+      360deg,
+      rgba(254, 252, 247, 0.504981) 0%,
+      #fefcf7 55.94%
+    );
+  }
+  .header--adaptive .header-left {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 50px 0px;
+    // margin: 0 auto;
+    width: 510px;
+    padding: 100px;
+    margin-top: 90px;
+    margin-left: -110px;
   }
-  .header-left {
-    display: flex;
-    list-style: none;
+  .header--adaptive .header-left .header-left-item {
+    display: inline-block;
+    margin-bottom: 32px;
+    font-weight: 900;
+    font-size: 24px;
+    font-family: "Fraunces";
+    line-height: 32px;
+    text-align: center;
+    color: #333d4b;
   }
-  .header-left-item {
-    margin-left: 33px;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #83888f;
+  .humburger_btn {
+    display: block;
   }
+}

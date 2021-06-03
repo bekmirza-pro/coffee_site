@@ -12,7 +12,7 @@
       <div class="container">
         <div class="header-item">
           <div class="header-right-item">
-            <a href="#">
+            <a class="site-logo" href="#">
               <img
                 src="./imges/site-logo.svg"
                 srcset="./imges/site-logo.svg 1x, ./imges/Group5@2x.png 2x"
@@ -21,7 +21,7 @@
                 height="24"
             /></a>
           </div>
-          <nav>
+          <nav class="site-nav">
             <ul class="header-left">
               <li><a class="header-left-item" href="./index.html">HOME</a></li>
               <li>
@@ -34,6 +34,14 @@
               </li>
             </ul>
           </nav>
+          <button class="humburger_btn" type="button">
+            <img
+              src="./imges/Humburger2.svg"
+              alt="nav Humburger2 button imges"
+              width="16px"
+              height="15px"
+            />
+          </button>
         </div>
       </div>
     </header>
@@ -63,11 +71,13 @@
                 width="256"
                 height="193"
               />
-              <h3 class="collection-heading">Gran Espresso</h3>
-              <p class="collection-paragraf">
-                Light and flavorful blend with cocoa and black pepper for an
-                intense experience.
-              </p>
+              <div>
+                <h3 class="collection-heading">Gran Espresso</h3>
+                <p class="collection-paragraf">
+                  Light and flavorful blend with cocoa and black pepper for an
+                  intense experience.
+                </p>
+              </div>
             </li>
             <li class="our-collection-item">
               <img
@@ -78,11 +88,13 @@
                 width="256"
                 height="193"
               />
-              <h3 class="collection-heading">Planalto</h3>
-              <p class="collection-paragraf">
-                Brazilian dark roast with rich and velvety body, and hints of
-                fruits and nuts.
-              </p>
+              <div>
+                <h3 class="collection-heading">Planalto</h3>
+                <p class="collection-paragraf">
+                  Brazilian dark roast with rich and velvety body, and hints of
+                  fruits and nuts.
+                </p>
+              </div>
             </li>
             <li class="our-collection-item">
               <img
@@ -93,11 +105,13 @@
                 width="256"
                 height="193"
               />
-              <h3 class="collection-heading">Piccollo</h3>
-              <p class="collection-paragraf">
-                Mild and smooth blend featuring notes of toasted almond and
-                dried cherry.
-              </p>
+              <div>
+                <h3 class="collection-heading">Piccollo</h3>
+                <p class="collection-paragraf">
+                  Mild and smooth blend featuring notes of toasted almond and
+                  dried cherry.
+                </p>
+              </div>
             </li>
             <li class="our-collection-item">
               <img
@@ -108,11 +122,13 @@
                 width="256"
                 height="193"
               />
-              <h3 class="collection-heading">Danche</h3>
-              <p class="collection-paragraf">
-                Ethiopian hand-harvested blend densely packed with vibrant fruit
-                notes.
-              </p>
+              <div>
+                <h3 class="collection-heading">Danche</h3>
+                <p class="collection-paragraf">
+                  Ethiopian hand-harvested blend densely packed with vibrant
+                  fruit notes.
+                </p>
+              </div>
             </li>
           </ul>
         </div>
@@ -166,10 +182,7 @@
           <ul class="section-last">
             <li class="section-last-item">
               <p class="section-last-namber">01</p>
-              <h2 class="small-last-heading">
-                Pick your <br />
-                coffee
-              </h2>
+              <h2 class="small-last-heading">Pick your coffee</h2>
               <p class="small-last-paragraf">
                 Select from our evolving range of artisan coffees. Our beans are
                 ethically sourced and we pay fair prices for them. There are new
@@ -206,7 +219,7 @@
             <a href="#"
               ><img
                 src="./imges/footer-logo.png"
-                srcset="./imges/footer-logo.png 1x,./imges/Group5.png 2x"
+                srcset="./imges/footer-logo.png 1x, ./imges/Group5.png 2x"
                 alt="site-logo"
                 width="202"
                 height="24"
@@ -249,5 +262,6 @@
         </div>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>

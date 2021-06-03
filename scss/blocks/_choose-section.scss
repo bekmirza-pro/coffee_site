@@ -1,13 +1,15 @@
 /* *****************WHY CHOOSE US***************************** */
 
 .why-choose-us .container-one {
-  width: 1280px;
+  width: 100%;
+  max-width: 1280px;
   height: 577px;
   margin: 0 auto;
   background: #2c343e;
 }
 .last-section .container {
-  width: 1045px;
+  width: 100%;
+  max-width: 1045px;
   margin: 0 auto;
 }
 .choose-heading {
@@ -35,6 +37,7 @@
   justify-content: center;
   list-style: none;
 }
+
 .services-section-item {
   position: relative;
   bottom: 220px;
@@ -45,16 +48,20 @@
   border-radius: 8px;
 }
 .section-box {
+  // padding: 70px 10px;
   margin-top: 130px;
 }
-.services-section-item:nth-child(1)::before {
+.services-section-item:nth-child(1)::after {
   position: absolute;
-  width: 72px;
-  height: 72px;
+  // display: inline-block;
+  // width: 72px;
+  // height: 72px;
   content: url(/imges/Shape.png);
-  background-size: 72px 72px;
+  background-position: center;
+  background-size: contain;
   top: 72px;
-  right: 143px;
+  right: 0;
+  transform: translateX(-200%);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -62,19 +69,20 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .services-section-item:nth-child(1)::before {
+  .services-section-item:nth-child(1)::after {
     width: 72px;
     content: url(/imges/Shape@2x.svg);
   }
 }
-.services-section-item:nth-child(2)::before {
+.services-section-item:nth-child(2)::after {
   position: absolute;
-  width: 72px;
-  height: 72px;
+  // width: 72px;
+  // height: 72px;
   content: url(/imges/Combined1Shape.svg);
   top: 72px;
-  background-size: 72px 72px;
-  right: 143px;
+  background-size: contain;
+  right: 0;
+  transform: translateX(-200%);
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -82,19 +90,20 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .services-section-item:nth-child(2)::before {
+  .services-section-item:nth-child(2)::after {
     width: 72px;
     content: url(/imges/CombinedShape@2x.svg);
   }
 }
-.services-section-item:nth-child(3)::before {
+.services-section-item:nth-child(3)::after {
   position: absolute;
-  width: 72px;
-  height: 72px;
+  // width: 72px;
+  // height: 72px;
   content: url(/imges/Combined2Shape.svg);
   top: 72px;
-  background-size: 72px 72px;
-  right: 143px;
+  background-size: contain;
+  right: 0;
+  transform: translateX(-200%);
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -103,7 +112,7 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .services-section-item:nth-child(3)::before {
+  .services-section-item:nth-child(3)::after {
     width: 72px;
     content: url(/imges/ComShape@2x.svg);
   }
@@ -217,4 +226,174 @@
 .last-section-link:active {
   background: #e2dedb;
   border-radius: 6px;
+}
+@media only screen and (max-width: 770px) {
+  .why-choose-us .container-one {
+    position: relative;
+    width: 100%;
+    max-width: 690px;
+    height: 573px;
+  }
+  .why-choose-us .container {
+    position: relative;
+    margin-bottom: 433px;
+  }
+  .choose-heading {
+    padding: 62px 0 0 0;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .choose-paragraf {
+    width: 520px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .services-section {
+    position: absolute;
+    right: 0;
+    // top: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 0;
+    margin: 0 auto;
+    // margin: auto 0;
+    transform:translateX(-5%) translateY(-14%);
+  }
+  .services-section-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 573px;
+    height: 180px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .section-box {
+    position: static;
+    order: 1;
+    margin-top: -66px;
+    margin-left: -60px;
+  }
+  .services-section-item:nth-child(n)::after {
+    position: static;
+    right: 0;
+    top: 0;
+    margin-left: 190px;
+  }
+  .services-heading {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .services-paragraf {
+    width: 354px;
+    text-align: left;
+  }
+}
+@media only screen and (max-width: 770px) {
+  .last-section .container {
+    width: 100%;
+    max-width: 690px;
+    // margin-left: 15px;
+  }
+  .section-last::before {
+    width: 490px;
+  }
+  .section-last-item:nth-child(2) {
+    margin-left: 15px;
+    margin-right: 20px;
+  }
+  .small-last-heading {
+    width: 200px;
+    font-size: 28px;
+  }
+  .small-last-paragraf {
+    width: 217px;
+    height: 152px;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .why-choose-us .container-one {
+    height: 900px;
+  }
+  .why-choose-us .container{
+    height: 700px;
+    margin-bottom: 0;
+  }
+  .choose-heading {
+    padding: 64px 0 0 0;
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .choose-paragraf {
+    width: 289px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .services-section {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    transform: translateY(-33%);
+  }
+  .services-section-item {
+    width: 279px;
+    height: 382px;
+    display: flex;
+    // margin-bottom: 50px;
+    align-items: center;
+  }
+  .section-box {
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+  .services-section-item:nth-child(n)::after {
+    position: absolute;
+    right: -13%;
+    top: 50px;
+  }
+  .services-heading {
+    width: 255px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .services-paragraf {
+    width: 212px;
+    text-align: center;
+  }
+  .last-section .container {
+    display: flex;
+    flex-direction: column;
+    //  margin-top: -100;
+    align-items: center;
+    // width: 327px;
+  }
+  .section-last {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .section-last-item {
+    margin-bottom: -50px;
+    text-align: center;
+  }
+  .section-last::before {
+    width: 0;
+    height: 0;
+  }
+  .section-last-item::before {
+    width: 0;
+    height: 0;
+    border: 0px solid white;
+  }
+  .small-last-heading {
+    width: 327px;
+    text-align: center;
+  }
+  .small-last-paragraf {
+    width: 325px;
+  }
 }
