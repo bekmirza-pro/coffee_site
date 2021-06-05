@@ -38,7 +38,7 @@
     max-width: 690px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 607px) {
   .site-nav {
     display: none;
   }
@@ -62,20 +62,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // margin: 0 auto;
-    width: 510px;
-    padding: 100px;
-    margin-top: 90px;
-    margin-left: -110px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    // max-width: 510px;
+    padding: 150px 20px;
+    // padding: 100px;
+    // margin-top: 90px;
+    // margin-left: -110px;
   }
   .header--adaptive .header-left .header-left-item {
     display: inline-block;
+    width: 100%;
+    max-width: 310px;
+    text-align: center;
     margin-bottom: 32px;
+    margin-left: 0;
     font-weight: 900;
     font-size: 24px;
     font-family: "Fraunces";
     line-height: 32px;
-    text-align: center;
     color: #333d4b;
   }
   .humburger_btn {

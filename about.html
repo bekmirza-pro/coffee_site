@@ -12,26 +12,41 @@
       <div class="container">
         <div class="header-item">
           <div class="header-right-item">
-            <a href="#">
+            <a class="site-logo" href="#">
               <img
                 src="./imges/site-logo.svg"
+                srcset="./imges/site-logo.svg 1x, ./imges/Group5@2x.png 2x"
                 alt="site-logo"
                 width="204"
                 height="24"
             /></a>
           </div>
-          <nav>
+          <nav class="site-nav">
             <ul class="header-left">
               <li><a class="header-left-item" href="./index.html">HOME</a></li>
-              <li><a class="header-left-item" href="./about.html">ABOUT US</a></li>
-              <li><a class="header-left-item" href="./create_your_plan.html">CREATE YOUR PLAN</a></li>
+              <li>
+                <a class="header-left-item" href="./about.html">ABOUT US</a>
+              </li>
+              <li>
+                <a class="header-left-item" href="./create_your_plan.html"
+                  >CREATE YOUR PLAN</a
+                >
+              </li>
             </ul>
           </nav>
+          <button class="humburger_btn" type="button">
+            <img
+              src="./imges/Humburger2.svg"
+              alt="nav Humburger2 button imges"
+              width="16px"
+              height="15px"
+            />
+          </button>
         </div>
       </div>
     </header>
-     <main class="site__content">
-      <section class="health-section">
+    <main class="site__content">
+      <!-- <section class="health-section">
         <div class="container">
           <div class="health-info">
             <h1 class="health-heading">About Us</h1>
@@ -43,11 +58,62 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="our-commitment">
         <div class="container">
           <div class="our-commitment-info">
-            <div>
+            <picture>
+              <source
+                type="image/webp"
+                media="(max-width:600px)"
+                srcset="
+                  ./imges/coffee-mobile1.webp 1x,
+                  ./imges/coffee-mobile.webp  2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(max-width:768px)"
+                srcset="
+                  ./imges/coffee-tablet.webp    1x,
+                  ./imges/coffee-tablet@2x.webp 2x
+                "
+               
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./imges/coffee-desktop.webp    1x,
+                  ./imges/coffee-desktop@2x.webp 2x
+                "
+              />
+              <!-- jpg defoult -->
+              <source
+                media="(max-width:600px)"
+                srcset="
+                  ./imges/coffee-mobile.png 1x,
+                  ./imges/coffee-mobile.jpg 2x
+                "
+              />
+              <source
+                media="(max-width:768px)"
+                srcset="
+                  ./imges/coffee-tablet.jpg    1x,
+                  ./imges/coffee-tablet@2x.png 2x
+                "
+              />
+              <img
+                src="./imges/coffee-desktop.png"
+                srcset="
+                  ./imges/coffee-desktop.png    1x,
+                  ./imges/coffee-desktop@2x.png 2x
+                "
+                alt="coffee-desktop"
+                width="445"
+                height="520"
+              />
+            </picture>
+            <div class="our-left-commitment">
               <h2 class="our-heading">Our commitment</h2>
               <p class="our-paragraf">
                 We’re built on a simple mission and a commitment to doing good
@@ -67,7 +133,7 @@
           </div>
         </div>
       </section>
-      <section class="quality-section">
+      <!-- <section class="quality-section">
         <div class="container">
           <div class="quality-item">
             <h1 class="quality-heading">Uncompromising quality</h1>
@@ -81,8 +147,8 @@
           </p>
           </div>
         </div>
-      </section>
-      <section class="headquarters-section">
+      </section> -->
+      <!-- <section class="headquarters-section">
         <div class="container">
 <h3 class="headquarters-heading">Our headquarters</h3>
 <ul class="headquarters-list">
@@ -109,8 +175,8 @@
   </li>
 </ul>
         </div>
-      </section>
-    </main> 
+      </section> -->
+    </main>
     <footer class="footer">
       <div class="container">
         <div class="footer-item">
@@ -118,14 +184,21 @@
             <a href="#"
               ><img
                 src="./imges/footer-logo.png"
+                srcset="./imges/footer-logo.png 1x, ./imges/Group5.png 2x"
                 alt="site-logo"
                 width="202"
                 height="24"
             /></a>
             <ul class="footer-list">
               <li><a class="footer-list-item" href="./index.html">HOME</a></li>
-              <li><a class="footer-list-item" href="./about.html">ABOUT US</a></li>
-              <li><a class="footer-list-item" href="./create_your_plan.html">CREATE YOUR PLAN</a></li>
+              <li>
+                <a class="footer-list-item" href="./about.html">ABOUT US</a>
+              </li>
+              <li>
+                <a class="footer-list-item" href="./create_your_plan.html"
+                  >CREATE YOUR PLAN</a
+                >
+              </li>
             </ul>
           </div>
           <div class="footer-left">
@@ -133,23 +206,27 @@
               <img
                 class="footer-left-fhoto"
                 src="./imges/facebook.png"
+                srcset="./imges/facebook.png 1x, ./imges/Path@2x.png 2x"
                 alt="facebook"
             /></a>
             <a href="#">
               <img
-                class="footer-left-fhoto"
+                class="footer-left-fhoto2"
                 src="./imges/twitter.png"
+                srcset="./imges/twitter.png 1x, ./imges/twitter@2x.png 2x"
                 alt="twitter"
             /></a>
             <a href="#">
               <img
                 class="footer-left-fhoto"
                 src="./imges/instagram.png"
+                srcset="./imges/instagram.png 1x, ./imges/instagram@2x.png 2x"
                 alt="instagram"
             /></a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
