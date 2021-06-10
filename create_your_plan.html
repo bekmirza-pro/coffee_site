@@ -12,7 +12,7 @@
       <div class="container">
         <div class="header-item">
           <div class="header-right-item">
-            <a href="#">
+            <a class="site-logo" href="#">
               <img
                 src="./imges/site-logo.svg"
                 srcset="./imges/site-logo.svg 1x, ./imges/Group5@2x.png 2x"
@@ -21,7 +21,7 @@
                 height="24"
             /></a>
           </div>
-          <nav>
+          <nav class="site-nav">
             <ul class="header-left">
               <li><a class="header-left-item" href="./index.html">HOME</a></li>
               <li>
@@ -34,6 +34,14 @@
               </li>
             </ul>
           </nav>
+          <button class="humburger_btn" type="button">
+            <img
+              src="./imges/Humburger2.svg"
+              alt="nav Humburger2 button imges"
+              width="16px"
+              height="15px"
+            />
+          </button>
         </div>
       </div>
     </header>
@@ -57,7 +65,7 @@
               <li class="section-last-item-copy">
                 <p class="section-last-namber">01</p>
                 <h2 class="small-last-heading-copy">
-                  Pick your <br />
+                  Pick your 
                   coffee
                 </h2>
                 <p class="small-last-paragraf-copy">
@@ -89,8 +97,9 @@
           </div>
         </div>
       </section>
-      <section class="big-section">
+     <section class="big-section">
         <div class="container">
+         <div class="big-box">
           <ul class="big-section-list">
             <li class="big-section-list-item">
               <a class="big-section-link" href="#coffee1">
@@ -132,8 +141,8 @@
             </li>
           </ul>
           <div class="big-section-left">
-            <form action="#">
-              <h2 class="form-heading" id="coffee1">How do you drink your coffee?</h2>
+            <form class="form-list" action="#">
+              <h2 class="form-heading heading" id="coffee1">How do you drink your coffee?</h2>
               <div class="form-box">
                 <label class="label_radio">
                   <input
@@ -372,9 +381,10 @@
               <button class="form-button" type="submit">Create my plan!</button>
             </form>
           </div>
+         </div>
         </div>
       </section>
-    </main>
+    </main> 
     <footer class="footer">
       <div class="container">
         <div class="footer-item">
@@ -382,7 +392,7 @@
             <a href="#"
               ><img
                 src="./imges/footer-logo.png"
-                srcset="./imges/footer-logo.png 1x,./imges/Group5.png 2x"
+                srcset="./imges/footer-logo.png 1x, ./imges/Group5.png 2x"
                 alt="site-logo"
                 width="202"
                 height="24"
@@ -409,7 +419,7 @@
             /></a>
             <a href="#">
               <img
-                class="footer-left-fhoto"
+                class="footer-left-fhoto2"
                 src="./imges/twitter.png"
                 srcset="./imges/twitter.png 1x, ./imges/twitter@2x.png 2x"
                 alt="twitter"
@@ -425,5 +435,6 @@
         </div>
       </div>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>

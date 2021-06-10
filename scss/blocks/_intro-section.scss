@@ -1,6 +1,6 @@
 .intro .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1320px;
   height: 600px;
   margin: 0 auto;
   padding: 0 20px;
@@ -19,6 +19,7 @@
 .intro-info {
   width: 100%;
   padding: 117px 85px;
+  margin: 0 auto;
   background-image: url(../imges/Bitmap.png);
   background-repeat: no-repeat;
   border-radius: 10px;
@@ -62,15 +63,15 @@
   background: #e2dedb;
   border-radius: 6px;
 }
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 780px) {
   .intro .container {
     width: 100%;
-    max-width: 690px;
+    // max-width: 689px;
     height: 500px;
   }
   .intro-info {
     width: 100%;
-    max-width: 690px;
+    // max-width: 690px;
     padding: 104px 58px;
     background-position: center;
     background-size: cover;
@@ -92,33 +93,34 @@
     display: inline-block;
   }
 }
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 410px) {
   .intro-info {
     margin-bottom: 200px;
     padding: 90px 50px;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
   .intro .container {
     width: 100%;
-    max-width: 327px;
+    // max-width: 375px;
     height: 500px;
   }
   .intro-info {
     // box-sizing: border-box;
     width: 100%;
-    max-width: 327px;
+    // max-width: 327px;
     // height: 500px;
-    padding: 100px 3px;
+    padding: 100px 29px;
     margin-bottom: 200px;
     text-align: center;
-    background-position:-475px center;
+    background-position: -475px center;
     background-size: cover;
   }
   .intro-heading {
     // width: 279px;
     margin-top: 0;
     text-align: center;
+
     font-size: 40px;
     line-height: 40px;
   }

@@ -5,6 +5,7 @@
 }
 .our-commitment-info {
   display: flex;
+  margin: 0 auto;
   // justify-content: space-between;
   align-items: center;
 }
@@ -32,7 +33,7 @@
     width: 100%;
     max-width: 369px;
     // height: 350px;
-    margin-left: 59px;
+    margin-left: 69px;
   }
   .our-heading {
     margin-bottom: 0;
@@ -42,16 +43,18 @@
   }
   .our-paragraf {
     // margin-top: 30px;
+    width: 339px;
     font-size: 15px;
     line-height: 25px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 675px) {
   
   .our-commitment-info {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
   .our-left-commitment {
     width: 100%;
@@ -69,6 +72,8 @@
     line-height: 48px;
   }
   .our-paragraf {
+    width: 100%;
+    max-width: 329px;
     margin-top: 30px;
     font-size: 15px;
     line-height: 25px;

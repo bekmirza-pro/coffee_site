@@ -1,11 +1,9 @@
 .health-section .container {
-  width: 1280px;
+  width: 100%;
+  max-width: 1320px;
   height: 450px;
   padding: 0 20px;
   margin-bottom: 168px;
-  background-image: url(/imges/Bit.jpg);
-  background-size: 1280px 450px;
-  background-repeat: no-repeat;
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
@@ -13,15 +11,20 @@
   only screen and (min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-    .health-section .container {
+  .health-section .container {
     background-image: url(/imges/about@2x.png);
   }
-
-  
 }
 .health-info {
-  width: 590px;
-  padding: 120px 85px;
+  width: 100%;
+  max-width: 1320px;
+  padding: 118px 58px;
+  height: 450px;
+  margin: 0 auto;
+  background-image: url(/imges/Bit.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  // background-repeat: no-repeat;
 }
 .health-heading {
   font-weight: 900;
@@ -31,7 +34,50 @@
   color: #fefcf7;
 }
 .health-paragraf {
+  width: 100%;
+  max-width: 445px;
   font-size: 16px;
   line-height: 26px;
   color: #fefcf7;
+}
+@media only screen and (max-width: 770px) {
+  .health-info {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+  }
+  .health-heading {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .health-paragraf {
+    width: 100%;
+    max-width: 398px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .health-info {
+    width: 100%;
+    max-width: 329px;
+    height: 400px;
+    padding: 103px 24px;
+    text-align: center;
+    margin-top: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  .health-heading {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .health-paragraf {
+    width: 100%;
+    max-width: 279px;
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.8;
+  }
 }

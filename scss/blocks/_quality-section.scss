@@ -1,34 +1,28 @@
 .quality-section .container {
-  width: 1280px;
-  height: 462px;
+  max-width: 1320px;
+  // height: 462px;
+  padding: 0 20px;
   margin-bottom: 168px;
-  background: #2c343e;
-  border-radius: 10px;
 }
 .quality-item {
-  width: 685px;
-  padding: 100px 85px;
+  width: 100%;
+  max-width: 1320px;
+  // height: 474px;
+  display: flex;
+  // align-items: center;
+  padding: 50px 85px 10px;
+  background: #2c343e;
+  border-radius: 10px;
   color: #fefcf7;
 }
-.quality-item::before{
-    position: absolute;
-    transform: translateX(150%) translateY(-40%);
-    content: url(/imges/Bitmap3.jpg);
-}
-@media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-  .quality-item::before{
-    content: url(/imges/Bitmap3@2x.svg);
-   }
- 
+.coffeee {
+  // padding: 0 10px;
+  transform: translateX(30%) translateY(-26%);
 }
 .quality-heading {
+  width: 100%;
+  max-width: 540px;
+  text-align: center;
   font-family: "Fraunces";
   font-style: normal;
   font-weight: 900;
@@ -36,7 +30,9 @@ only screen and (                min-resolution: 2dppx) {
   line-height: 48px;
 }
 .quality-paragraf {
-  width: 540px;
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -44,4 +40,57 @@ only screen and (                min-resolution: 2dppx) {
   color: #fefcf7;
   mix-blend-mode: normal;
   opacity: 0.8;
+}
+@media only screen and (max-width: 1226px) {
+  .quality-item {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+    // height: 300px;
+  }
+  .coffeee {
+    transform: translateX(0%) translateY(-60%);
+    width: 603px;
+    height: 330px;
+    // padding: 0 20px;
+    margin: 0 auto;
+    order: -1;
+  }
+  .quality-p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // top: 200px;
+    text-align: center;
+  }
+  .quality-heading{
+    font-size: 32px;
+    text-align: center;
+  }
+  .quality-paragraf{
+    font-size: 15px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 550px) {
+
+  .coffeee{
+    width: 279px;
+    height: 156px;
+    transform: translateY(-90%);
+  }
+  .quality-p {
+    // top: 200px;
+    text-align: center;
+  }
+  .quality-heading{
+    font-size: 28px;
+    text-align: center;
+  }
+  .quality-paragraf{
+    font-size: 15px;
+    text-align: center;
+  }
+
+
 }
